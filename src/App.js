@@ -8,23 +8,22 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Logout from './Auth/Logout.js'
+import User from './Auth/User.js'
+import LoginForm from './LoginForm.js'
+import Profile from './Auth/Profile.js'
 
 class App extends React.Component {
   render() {
     return (
       <>
-        <Router>
+       
           <Header />
-          <Routes>
-            <Route 
-              exact path="/"
-              element={<BestBooks />}
-            >
-            </Route>
-            {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
-          </Routes>
+          <LoginForm />
+          <User />
+         
           <Footer />
-        </Router>
+       
       </>
     )
   }
